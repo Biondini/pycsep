@@ -2327,7 +2327,7 @@ def plot_contingency_Molchan(forecast, catalog, axes=None, plot_uniform=True, sa
         TypeError: throws error if CatalogForecast-like object is provided
         RuntimeError: throws error if Catalog and Forecast do not have the same region
 
-        Written by Han Bao, UCLA, March 2021. Modified June 2021.
+         Written by Emanuele Biondini, UNIBO, March 2024
     """
     if not catalog.region == forecast.region:
         raise RuntimeError("catalog region and forecast region must be identical.")
@@ -2508,7 +2508,7 @@ def plot_contingency_ROC(forecast, catalog, axes=None, plot_uniform=True, savepd
         TypeError: throws error if CatalogForecast-like object is provided
         RuntimeError: throws error if Catalog and Forecast do not have the same region
 
-        Written by Han Bao, UCLA, March 2021. Modified June 2021.
+        Written by Emanuele Biondini, UNIBO, March 2024.
     """
     if not catalog.region == forecast.region:
         raise RuntimeError("catalog region and forecast region must be identical.")
